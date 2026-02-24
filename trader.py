@@ -2,7 +2,8 @@ import alpaca_trade_api as tradeapi
 import time
 from datetime import datetime
 
-# --- CONFIGURATION ---
+# --- CONFIGURATION comment
+
 API_KEY = "PKJ6UV4G4PKYHMVZZFNFH77BNJ"
 SECRET_KEY = "44GM1kfatyhB8wAvo3moUZqb7xRFUhYS4gaX1ZCqYNn8"
 BASE_URL = "https://paper-api.alpaca.markets"
