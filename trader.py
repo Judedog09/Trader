@@ -43,19 +43,8 @@ def run_trader():
                     print(f"[{datetime.now().strftime('%H:%M:%S')}] {SYMBOL}: No data received. Is the market open?", flush=True)
                     continue
 
-<<<<<<< HEAD
-            # Strategy
-            if current_price < (sma * 1.000) and holding == "NO":
-                print(">>> SIGNAL: BUY", flush=True)
-                api.submit_order(symbol=SYMBOL, qty=QTY, side='buy', type='market', time_in_force='gtc')
-            #fixed bug
-            elif current_price > (sma * 1.115) and holding == "YES":
-                print(">>> SIGNAL: SELL", flush=True)
-                api.submit_order(symbol=SYMBOL, qty=QTY, side='sell', type='market', time_in_force='gtc')
-=======
                 current_price = bars['close'].iloc[-1]
                 sma = bars['close'].mean()
->>>>>>> 9c94315ebacdc036c666c6139d89f385227cef9d
 
                 try:
                     api.get_position(SYMBOL)
