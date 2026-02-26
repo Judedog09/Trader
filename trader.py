@@ -2,7 +2,7 @@ import alpaca_trade_api as tradeapi
 import time
 from datetime import datetime
 
-# --- CONFIGURATION comment
+# --- CONFIGURATION comment Videet
 
 API_KEY = "PKJ6UV4G4PKYHMVZZFNFH77BNJ"
 SECRET_KEY = "44GM1kfatyhB8wAvo3moUZqb7xRFUhYS4gaX1ZCqYNn8"
